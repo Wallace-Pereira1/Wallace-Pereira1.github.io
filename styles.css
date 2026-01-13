@@ -1,0 +1,327 @@
+/* --- RESET E VARIÁVEIS --- */
+:root {
+  /* Paleta Dark Mode (Padrão) */
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent-color: #38bdf8;
+  --hover-color: #0ea5e9;
+  --font-stack: 'Inter', sans-serif;
+}
+
+/* Paleta Light Mode (Ativo no JS) */
+body.light-mode {
+  --bg-color: #ffffff;
+  --card-bg: #f1f5f9;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent-color: #0284c7;
+  --hover-color: #0369a1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave ao clicar no menu */
+}
+
+body {
+  font-family: var(--font-stack);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* --- ESTRUTURA GERAL --- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+/* --- HEADER / NAVBAR --- */
+header {
+  background-color: rgba(15, 23, 42, 0.95);
+  padding: 20px 0;
+  position: fixed; /* Fixa o menu no topo */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #334155;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+nav a {
+  margin-left: 20px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+.btn-nav {
+  border: 1px solid var(--accent-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: var(--accent-color);
+}
+
+.btn-nav:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+/* --- HERO SECTION --- */
+#hero {
+  height: 100vh; /* Ocupa a tela toda */
+  display: flex;
+  align-items: center;
+  padding-top: 60px; /* Compensar o menu fixo */
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.hero-btns {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-secondary {
+  border: 1px solid var(--text-muted);
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-main);
+}
+
+/* --- PROJETOS (GRID) --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.project-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background-color: rgba(56, 189, 248, 0.1);
+  color: var(--accent-color);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.links {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* --- SKILLS --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.skill-category h4 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category li {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.skill-category li::before {
+  content: "▹";
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid #334155;
+  margin-top: 40px;
+}
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  margin: 0 15px;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+/* --- Responsividade (MOBILE) --- */
+@media (max-width: 768px) {
+  #hero h1 { font-size: 2.5rem; }
+  .skills-grid { grid-template-columns: 1fr; } /* Pilha as skills no mobile */
+  nav { display: none; }
+}
+
+/* --- TEMA E ANIMAÇÕES --- */
+
+/* Botão de Toggle */
+.btn-theme {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.btn-theme:hover {
+  color: var(--accent-color);
+}
+
+/* Cursor Piscando */
+.cursor {
+  display: inline-block;
+  background-color: var(--accent-color);
+  width: 3px;
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  color: transparent; /* Esconde o caractere pipe '|' e mostra só o fundo */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Ajuste específico para o subtítulo não pular linha enquanto digita */
+#hero h2 {
+  min-height: 1.5em; /* Reserva espaço */
+}
+
+/* --- EFEITO DE LUZ (MOUSE GLOW) --- */
+body::before {
+  content: '';
+  position: fixed; /* Fica fixo na tela mesmo scrolando */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Fica atrás de tudo */
+  pointer-events: none; /* Garante que não atrapalhe cliques */
+  
+  /* Degradê que segue as variáveis --x e --y */
+  background: radial-gradient(
+      600px circle at var(--x) var(--y), 
+      rgba(56, 189, 248, 0.15), /* Cor da luz*/
+      transparent 80% /* Desvanece para transparente */
+  );
+}
+
+/* Ajuste para o Light Mode */
+body.light-mode::before {
+  background: radial-gradient(
+      600px circle at var(--x) var(--y), 
+      rgba(14, 165, 233, 0.15), /* Azul Céu com 15% de opacidade */
+      transparent 80%
+  );
+}
