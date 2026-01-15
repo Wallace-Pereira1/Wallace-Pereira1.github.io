@@ -90,3 +90,36 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.setProperty('--y', `${y}px`);
     });
 });
+
+// --- Lógica do Modal de Imagens ---
+
+const modal = document.getElementById("modal-projeto");
+const modalImg = document.getElementById("img-ampliada");
+const closeBtn = document.getElementsByClassName("close-btn")[0];
+
+// Seleciona todos os botões de preview
+const previewButtons = document.querySelectorAll(".btn-preview");
+
+previewButtons.forEach(btn => {
+    btn.addEventListener("click", function() {
+        modal.style.display = "flex"; // Mostra o modal
+        modal.style.alignItems = "center"; // Centraliza verticalmente
+        modal.style.justifyContent = "center"; // Centraliza horizontalmente
+        
+        // Pega o caminho da imagem do atributo data-img
+        const imgSrc = this.getAttribute("data-img");
+        modalImg.src = imgSrc;
+    });
+});
+
+// Fechar ao clicar no X
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Fechar ao clicar fora da imagem
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

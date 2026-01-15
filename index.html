@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallace Pereira | Automação e Integrações</title>
+    <title>Wallace Pereira | Portifólio</title>
     
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
@@ -68,6 +70,10 @@
                             <span>CRM API</span>
                         </div>
                         <div class="links">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                                <i class="fas fa-eye"></i> Ver Print
+                            </button>
+
                             <span style="font-size: 0.85rem; color: #94a3b8; cursor: default;">
                                 <i class="fas fa-lock"></i> Projeto Corporativo
                             </span>
@@ -87,6 +93,9 @@
                         </div>
                         <br>
                         <div class="links">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                                <i class="fas fa-eye"></i> Ver Print
+                            </button>
                             <a href="https://github.com/Wallace-Pereira1/fiscal-sentinel" target="_blank">
                                 <i class="fab fa-github"></i> Ver Código
                             </a>
@@ -107,6 +116,9 @@
                         <br>
                         <br>
                         <div class="links">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                                <i class="fas fa-eye"></i> Ver Print
+                            </button>
                             <a href="https://github.com/Wallace-Pereira1/process-quality-analysis-bakery" target="_blank">
                                 <i class="fab fa-github"></i> Ver Código
                             </a>
@@ -125,6 +137,9 @@
                             <span>Automação</span>
                         </div>
                         <div class="links">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                                <i class="fas fa-eye"></i> Ver Print
+                            </button>
                             <a href="https://github.com/Wallace-Pereira1/price-tracker" target="_blank">
                                 <i class="fab fa-github"></i> Ver Código
                             </a>
@@ -220,6 +235,12 @@
             <p class="copyright">&copy; 2026 - Desenvolvido por Wallace Pereira</p>
         </div>
     </footer>
-<script src="./script.js"></script>
-</body>
+    <div id="modal-projeto" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="img-ampliada">
+        <div id="caption"></div>
+    </div>
+    
+    <script src="./script.js"></script>
+    </body>
 </html>

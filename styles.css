@@ -325,3 +325,79 @@ body.light-mode::before {
       transparent 80%
   );
 }
+
+/* --- MODAL DE PREVIEW --- */
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 9999; /* Fica por cima de tudo */
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto transparente */
+  backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: zoom 0.3s;
+}
+
+/* Animação de Zoom ao abrir */
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* Botão de Fechar (X) */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilo do Botão "Ver Print" no Card */
+.btn-preview {
+  background: transparent;
+  border: 1px solid #94a3b8;
+  color: #94a3b8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-preview:hover {
+  background: #2dd4bf;
+  color: #0f172a;
+  border-color: #2dd4bf;
+}
+
+/* Responsividade para celular */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 95%;
+  }
+}
