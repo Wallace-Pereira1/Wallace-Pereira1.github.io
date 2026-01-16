@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallace Pereira | Portifólio</title>
-    
+
     <link rel="icon" type="image/png" href="./assets/favicon.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
 
     <header id="navbar">
@@ -32,11 +34,12 @@
             <div class="container">
                 <h1><span id="typewriter-name"></span><span class="cursor">|</span></h1>
                 <h2><span id="typewriter-job"></span></h2>
-                
+
                 <p>Transformo processos manuais e complexos em sistemas eficientes.</p>
                 <div class="hero-btns">
                     <a href="#projetos" class="btn-primary">Ver Portfólio</a>
-                    <a href="https://github.com/Wallace-Pereira1" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://github.com/Wallace-Pereira1" target="_blank" class="btn-secondary"><i
+                            class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
         </section>
@@ -44,24 +47,48 @@
         <section id="sobre">
             <div class="container">
                 <article class="project-card">
-                <h3>Sobre Mim</h3>
-                <p>Sou formado em Ciência da Computação e atuo com automação de processos e soluções de Inteligência Artificial aplicadas a contextos comerciais e operacionais. Tenho experiência no desenvolvimento de automações escaláveis, integrando APIs, Webhooks, bancos de dados e CRMs, com foco em eficiência e padronização.</p>
-                <br>
-                <p>Trabalho principalmente com JavaScript e TypeScript, desenvolvendo agentes de IA, RPA e integrações inteligentes, utilizando LLMs, visão computacional e NLP para gerar impacto real no negócio.</p>
-                <br>
+
+                    <div class="about-content">
+                        <div class="img-container">
+                            <img src="./assets/profile_pic.jpg" alt="Foto de Wallace Pereira" class="profile-pic">
+                        </div>
+
+                        <div class="text-container">
+                            <h3>Sobre Mim</h3>
+                            <p>
+                                Sou formado em Ciência da Computação e atuo com automação de processos e soluções de
+                                Inteligência Artificial aplicadas a contextos comerciais e operacionais. Tenho
+                                experiência no desenvolvimento de automações escaláveis, integrando APIs, Webhooks,
+                                bancos de dados e CRMs, com foco em eficiência e padronização.
+                            </p>
+                            <br>
+                            <p>
+                                Utilizo principalmente <strong>JavaScript</strong> para orquestração de processos,
+                                tratamento e filtragem de dados em fluxos de automação e integrações. Atuo com
+                                <strong>RPA e IA aplicada</strong>, utilizando <strong>LLMs, NLP e visão
+                                    computacional</strong> para resolver problemas reais de negócio. Já atuei como
+                                desenvolvedor <strong>Angular</strong>, trabalhando com <strong>TypeScript</strong> no
+                                desenvolvimento frontend.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </article>
             </div>
-        </article>
         </section>
 
         <section id="projetos">
             <div class="container">
                 <h3>Projetos em Destaque</h3>
                 <div class="projects-grid">
-                    
+
                     <article class="project-card">
                         <h4>Agente IA Imobiliário Multimodal</h4>
                         <p class="description">
-                            Solução de IA que processa <strong>Texto e Áudio</strong> para qualificar leads e agendar visitas. Consulta imóveis em tempo real via API do CRM e utiliza <strong>Análise de Sentimento</strong> para transbordo humano em casos de atrito.
+                            Solução de IA que processa <strong>Texto e Áudio</strong> para qualificar leads e agendar
+                            visitas. Consulta imóveis em tempo real via API do CRM e utiliza <strong>Análise de
+                                Sentimento</strong> para transbordo humano em casos de atrito.
                         </p>
                         <div class="tags">
                             <span>OpenAI (LLM)</span>
@@ -70,7 +97,8 @@
                             <span>CRM API</span>
                         </div>
                         <div class="links">
-                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300"
+                                data-alt="Print do Fiscal Sentinel rodando">
                                 <i class="fas fa-eye"></i> Ver Print
                             </button>
 
@@ -83,7 +111,9 @@
                     <article class="project-card">
                         <h4>Leitor de Notas Fiscais (OCR + IA)</h4>
                         <p class="description">
-                            Automação financeira que utiliza o <strong>Gemini 2.0 Flash</strong> para ler fotos de recibos e extrair dados estruturados (CNPJ, Data, Total, Itens) em JSON, eliminando digitação manual.
+                            Automação financeira que utiliza o <strong>Gemini 2.0 Flash</strong> para ler fotos de
+                            recibos e extrair dados estruturados (CNPJ, Data, Total, Itens) em JSON, eliminando
+                            digitação manual.
                         </p>
                         <div class="tags">
                             <span>Node.js</span>
@@ -93,7 +123,8 @@
                         </div>
                         <br>
                         <div class="links">
-                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300"
+                                data-alt="Print do Fiscal Sentinel rodando">
                                 <i class="fas fa-eye"></i> Ver Print
                             </button>
                             <a href="https://github.com/Wallace-Pereira1/fiscal-sentinel" target="_blank">
@@ -105,7 +136,8 @@
                     <article class="project-card">
                         <h4>Análise de Qualidade Industrial</h4>
                         <p class="description">
-                            Estudo de caso avaliando inconsistências em processos produtivos. Identificação de erros de medição e padrões operacionais para propor melhorias de eficiência.
+                            Estudo de caso avaliando inconsistências em processos produtivos. Identificação de erros de
+                            medição e padrões operacionais para propor melhorias de eficiência.
                         </p>
                         <div class="tags">
                             <span>Python</span>
@@ -116,10 +148,12 @@
                         <br>
                         <br>
                         <div class="links">
-                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300"
+                                data-alt="Print do Fiscal Sentinel rodando">
                                 <i class="fas fa-eye"></i> Ver Print
                             </button>
-                            <a href="https://github.com/Wallace-Pereira1/process-quality-analysis-bakery" target="_blank">
+                            <a href="https://github.com/Wallace-Pereira1/process-quality-analysis-bakery"
+                                target="_blank">
                                 <i class="fab fa-github"></i> Ver Código
                             </a>
                         </div>
@@ -128,7 +162,9 @@
                     <article class="project-card">
                         <h4>Monitor de Preços (RPA)</h4>
                         <p class="description">
-                            Robô autônomo que monitora e-commerces para detectar quedas de preço. Utiliza <strong>Puppeteer</strong> para simular navegação humana, manipular o DOM e extrair dados em tempo real sem depender de APIs pagas.
+                            Robô autônomo que monitora e-commerces para detectar quedas de preço. Utiliza
+                            <strong>Puppeteer</strong> para simular navegação humana, manipular o DOM e extrair dados em
+                            tempo real sem depender de APIs pagas.
                         </p>
                         <div class="tags">
                             <span>TypeScript</span>
@@ -137,7 +173,8 @@
                             <span>Automação</span>
                         </div>
                         <div class="links">
-                            <button class="btn-preview" data-img="https://picsum.photos/200/300" data-alt="Print do Fiscal Sentinel rodando">
+                            <button class="btn-preview" data-img="https://picsum.photos/200/300"
+                                data-alt="Print do Fiscal Sentinel rodando">
                                 <i class="fas fa-eye"></i> Ver Print
                             </button>
                             <a href="https://github.com/Wallace-Pereira1/price-tracker" target="_blank">
@@ -149,7 +186,9 @@
                     <article class="project-card">
                         <h4>Modernização de Sistema Legado</h4>
                         <p class="description">
-                            Atuação na migração de um sistema corporativo antigo para arquitetura <strong>Angular</strong> (SPA). Desenvolvimento de componentes de UI, modais complexos e lógica de negócio em <strong>TypeScript</strong>.
+                            Atuação na migração de um sistema corporativo antigo para arquitetura
+                            <strong>Angular</strong> (SPA). Desenvolvimento de componentes de UI, modais complexos e
+                            lógica de negócio em <strong>TypeScript</strong>.
                         </p>
                         <div class="tags">
                             <span>Angular</span>
@@ -168,52 +207,58 @@
             </div>
         </section>
 
-        
+
         <section id="skills">
             <div class="container">
                 <h3>Tecnologias & Ferramentas</h3>
                 <br>
                 <div class="skills-grid">
-                    
+
                     <div class="skill-category">
                         <h4>Linguagens</h4>
                         <div class="badge-container">
-                            <img src="https://skillicons.dev/icons?i=js,ts,py,cpp,java&theme=dark&perline=5" alt="Linguagens">
+                            <img src="https://skillicons.dev/icons?i=js,ts,py,cpp,java&theme=dark&perline=5"
+                                alt="Linguagens">
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Front-End / UI</h4>
                         <div class="badge-container">
-                            <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,htmx&theme=dark&perline=5" alt="Front-End">
+                            <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,htmx&theme=dark&perline=5"
+                                alt="Front-End">
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Back / Frameworks</h4>
                         <div class="badge-container">
-                            <img src="https://skillicons.dev/icons?i=angular,react,nodejs&theme=dark&perline=5" alt="Back-End">
+                            <img src="https://skillicons.dev/icons?i=angular,react,nodejs&theme=dark&perline=5"
+                                alt="Back-End">
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Banco de Dados</h4>
                         <div class="badge-container">
-                            <img src="https://skillicons.dev/icons?i=mysql,postgres,supabase&theme=dark&perline=5" alt="Database">
+                            <img src="https://skillicons.dev/icons?i=mysql,postgres,supabase&theme=dark&perline=5"
+                                alt="Database">
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Ferramentas</h4>
                         <div class="badge-container">
-                            <img src="https://skillicons.dev/icons?i=git,ps,figma,replit,regex&theme=dark&perline=5" alt="Ferramentas">
+                            <img src="https://skillicons.dev/icons?i=git,ps,figma,replit,regex&theme=dark&perline=5"
+                                alt="Ferramentas">
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4>Extras</h4>
                         <div class="badge-container">
-                            <img src="https://skillicons.dev/icons?i=arduino,md,vscode,aws,ai&theme=dark&perline=5" alt="Outros">
+                            <img src="https://skillicons.dev/icons?i=arduino,md,vscode,aws,ai&theme=dark&perline=5"
+                                alt="Outros">
                         </div>
                     </div>
 
@@ -240,7 +285,8 @@
         <img class="modal-content" id="img-ampliada">
         <div id="caption"></div>
     </div>
-    
+
     <script src="./script.js"></script>
-    </body>
+</body>
+
 </html>

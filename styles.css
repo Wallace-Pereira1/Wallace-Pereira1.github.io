@@ -401,3 +401,37 @@ body.light-mode::before {
       width: 95%;
   }
 }
+
+/* --- ESTILO DA SEÇÃO SOBRE MIM --- */
+
+/* Cria o layout lado a lado */
+.about-content {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 30px; /* Espaço entre a foto e o texto */
+  padding: 10px;
+}
+
+/* Estilo da Imagem */
+.profile-pic {
+  width: 140px;      /* Tamanho pequeno/médio */
+  height: 140px;     /* Garante que seja quadrada */
+  object-fit: cover; /* Evita que a foto fique esticada/deformada */
+  border-radius: 15px; /* Bordas arredondadas (mude para 50% se quiser redonda) */
+  border: 2px solid #38bdf8; /* Uma borda fina na cor do tema (opcional) */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra suave */
+}
+
+/* Ajuste para Celular (Mobile) */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column; /* Um embaixo do outro */
+      text-align: center;     /* Centraliza o texto */
+  }
+  
+  .profile-pic {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+  }
+}
